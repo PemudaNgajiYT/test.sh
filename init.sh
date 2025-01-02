@@ -17,7 +17,7 @@ update_system_and_install_screen() {
     echo "========================================"
     echo "🔄 Memperbarui sistem dan menginstal screen..."
     echo "========================================"
-    sudo apt update && sudo apt upgrade -y
+    apt update && apt upgrade -y
     if [ $? -eq 0 ]; then
         echo "✅ Sistem diperbarui dan screen berhasil diinstal."
     else
@@ -69,12 +69,11 @@ give_permission() {
 run_inichain_miner() {
     echo
     echo "========================================"
-    echo "🚀 Menjalankan InitVerse Miner dalam screen..."
+    echo "🚀 Menjalankan InitVerse Miner....."
     echo "========================================"
     # Validasi input
-    if [[ -z "$0x82cdda714059789939a41e61c856102c22290289" || -z "$AyamGoreng" ]]; then
+    if [[ -z "$0x82cdda714059789939a41e61c856102c22290289" || -z "$Ayam.Goreng" ]]; then
         echo "❌ Alamat dompet atau nama Worker tidak boleh kosong."
-        exit 1
     fi
 
     POOL_URL="stratum+tcp://${0x82cdda714059789939a41e61c856102c22290289}.${AyamGoreng}@pool-core-testnet.inichain.com:32672"
