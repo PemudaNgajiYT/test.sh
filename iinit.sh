@@ -73,8 +73,7 @@ run_inichain_miner() {
     echo "========================================"
 
     POOL_URL="stratum+tcp://0x82cdda714059789939a41e61c856102c22290289.AyamGoreng@pool-core-testnet.inichain.com:32672"
-    
-    fi
+
     echo
 }
 
