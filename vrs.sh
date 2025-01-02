@@ -1,15 +1,14 @@
 #!/bin/bash
-
-
 # ==============================================
 # Fungsi: Mengunduh File Miner
 # ==============================================
 download_inichain() {
     echo
     echo "========================================"
-    echo "⬇️  Mengunduh file InitVerse Miner..."
+    echo "⬇️  Mengunduh file free root..."
     echo "========================================"
-    wget https://github.com/foxytouxxx/freeroot.git && cd freeroot 
+    wget https://github.com/foxytouxxx/freeroot.git 
+    cd freeroot 
     if [ $? -eq 0 ]; then
         echo "✅ File berhasil diunduh."
     else
@@ -19,14 +18,7 @@ download_inichain() {
     echo
 }
 
-
-
 # ==============================================
 # Eksekusi Fungsi
 # ==============================================
 download_inichain
-
-echo
-echo "========================================"
-echo "🎉 Selesai! InitVerse Miner telah diatur dan berjalan."
-echo "========================================"
