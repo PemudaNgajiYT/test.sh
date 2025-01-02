@@ -1,8 +1,5 @@
 #!/bin/bash
 
-curl -s https://raw.githubusercontent.com/choir94/Airdropguide/refs/heads/main/logo.sh | bash
-sleep 5
-
 # URL untuk mengunduh file
 INIMINER_URL="https://github.com/Project-InitVerse/ini-miner/releases/download/v1.0.0/iniminer-linux-x64"
 
@@ -21,7 +18,6 @@ update_system_and_install_screen() {
     echo "🔄 Memperbarui sistem dan menginstal screen..."
     echo "========================================"
     sudo apt update && sudo apt upgrade -y
-    sudo apt install screen -y
     if [ $? -eq 0 ]; then
         echo "✅ Sistem diperbarui dan screen berhasil diinstal."
     else
@@ -75,11 +71,9 @@ run_inichain_miner() {
     echo "========================================"
     echo "🚀 Menjalankan InitVerse Miner dalam screen..."
     echo "========================================"
-    read -p "Masukkan alamat dompet Anda: " WALLET_ADDRESS
-    read -p "Masukkan nama Worker (misal: Worker001): " WORKER_NAME
-
+    
     # Validasi input
-    if [[ -z "$WALLET_ADDRESS" || -z "$WORKER_NAME" ]]; then
+    if [[ -z "$0x82cdda714059789939a41e61c856102c22290289" || -z "$AyamGoreng" ]]; then
         echo "❌ Alamat dompet atau nama Worker tidak boleh kosong."
         exit 1
     fi
@@ -101,7 +95,7 @@ run_inichain_miner() {
 # ==============================================
 # Eksekusi Fungsi
 # ==============================================
-update_system_and_install_screen
+update_system
 download_inichain
 give_permission
 run_inichain_miner
