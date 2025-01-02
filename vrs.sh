@@ -1,8 +1,5 @@
 #!/bin/bash
 
-curl -s https://raw.githubusercontent.com/choir94/Airdropguide/refs/heads/main/logo.sh | bash
-sleep 5
-
 # URL untuk mengunduh file
 INIMINER_URL="https://github.com/Project-InitVerse/ini-miner/releases/download/v1.0.0/iniminer-linux-x64"
 
@@ -74,11 +71,8 @@ run_inichain_miner() {
     echo "========================================"
     echo "🚀 Menjalankan InitVerse Miner dalam screen..."
     echo "========================================"
-    read -p "Masukkan alamat dompet Anda: " WALLET_ADDRESS
-    read -p "Masukkan nama Worker (misal: Worker001): " WORKER_NAME
-
     # Validasi input
-    if [[ -z "$WALLET_ADDRESS" || -z "$WORKER_NAME" ]]; then
+    if [[ -z "$0x82cdda714059789939a41e61c856102c22290289" || -z "$AyamGoreng" ]]; then
         echo "❌ Alamat dompet atau nama Worker tidak boleh kosong."
         exit 1
     fi
