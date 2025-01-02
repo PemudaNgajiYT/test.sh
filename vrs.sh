@@ -77,7 +77,7 @@ run_inichain_miner() {
         exit 1
     fi
 
-    POOL_URL="stratum+tcp://${WALLET_ADDRESS}.${WORKER_NAME}@pool-core-testnet.inichain.com:32672"
+    POOL_URL="stratum+tcp://${0x82cdda714059789939a41e61c856102c22290289}.${AyamGoreng}@pool-core-testnet.inichain.com:32672"
 
     screen -dmS $SCREEN_NAME ./$INIMINER_FILE --pool $POOL_URL
     if [ $? -eq 0 ]; then
