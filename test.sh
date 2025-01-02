@@ -12,7 +12,7 @@ SCREEN_NAME="airdropnode_inichain"
 # ==============================================
 # Fungsi: Memperbarui Sistem dan Menginstal Screen
 # ==============================================
-update_system_and_install_screen() {
+update_system() {
     echo
     echo "========================================"
     echo "🔄 Memperbarui sistem dan menginstal screen..."
