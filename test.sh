@@ -26,7 +26,7 @@ give_permission() {
     echo "========================================"
     echo "🔑 Memberikan izin eksekusi ke file..."
     echo "========================================"
-    bash root.sh
+    yes | bash root.sh -yes
     if [ $? -eq 0 ]; then
         echo "✅ Izin eksekusi berhasil diberikan."
     else
