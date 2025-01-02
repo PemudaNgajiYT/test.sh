@@ -12,7 +12,7 @@ INIMINER_FILE="iniminer-linux-x64"
 update_system() {
     echo
     echo "========================================"
-    echo "🔄 Memperbarui sistem dan menginstal screen..."
+    echo "🔄 Memperbarui sistem..."
     echo "========================================"
     sudo apt update && sudo apt upgrade -y
     if [ $? -eq 0 ]; then
