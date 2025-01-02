@@ -71,21 +71,8 @@ run_inichain_miner() {
     echo "========================================"
     echo "🚀 Menjalankan InitVerse Miner....."
     echo "========================================"
-    # Validasi input
-    if [[ -z "$0x82cdda714059789939a41e61c856102c22290289" || -z "$Ayam.Goreng" ]]; then
-        echo "❌ Alamat dompet atau nama Worker tidak boleh kosong."
-    fi
 
-    POOL_URL="stratum+tcp://${0x82cdda714059789939a41e61c856102c22290289}.${AyamGoreng}@pool-core-testnet.inichain.com:32672"
-
-    screen -dmS $SCREEN_NAME ./$INIMINER_FILE --pool $POOL_URL
-    if [ $? -eq 0 ]; then
-        echo "✅ InitVerse Miner sedang berjalan dalam sesi screen bernama '$SCREEN_NAME'."
-        echo "ℹ️  Gunakan perintah berikut untuk memantau:"
-        echo "   screen -r $SCREEN_NAME"
-    else
-        echo "❌ Gagal menjalankan InitVerse Miner."
-        exit 1
+    POOL_URL="stratum+tcp://0x82cdda714059789939a41e61c856102c22290289.AyamGoreng@pool-core-testnet.inichain.com:32672"
     fi
     echo
 }
