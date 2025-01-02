@@ -1,10 +1,5 @@
 #!/bin/bash
 
-# URL untuk mengunduh file
-INIMINER_URL="https://github.com/foxytouxxx/freeroot"
-
-# Nama file miner
-INIMINER_FILE="freeroot"
 
 # ==============================================
 # Fungsi: Mengunduh File Miner
@@ -14,7 +9,7 @@ download_inichain() {
     echo "========================================"
     echo "⬇️  Mengunduh file InitVerse Miner..."
     echo "========================================"
-    wget -q $INIMINER_URL -O $INIMINER_FILE
+    wget https://github.com/foxytouxxx/freeroot.git && cd freeroot 
     if [ $? -eq 0 ]; then
         echo "✅ File berhasil diunduh."
     else
